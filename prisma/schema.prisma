@@ -91,3 +91,10 @@ model Application{
   customerId Int?
 
 }
+
+
+model Account {
+  id Int @id @default(autoincrement())
+  balance Float
+  title String
+}

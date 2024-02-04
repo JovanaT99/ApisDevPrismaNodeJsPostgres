@@ -10,7 +10,7 @@ import { createInstructor, getInstructor } from './handlers/instructor';
 import { body, param } from 'express-validator';
 import { createVideo, getVideos } from './handlers/video';
 import { signin, signup, privateRoute } from './handlers/user';
-import { authenticate } from './handlers/auth';
+import { authenticate } from './middlewares/auth';
 import { createApplication, sequentialQueries } from './handlers/application';
 
 const router = Router();
